@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+$background-color: #252525 !important;
+$font-color: #fff !important;
+
+body {
+    opacity: 0.95;
+    background-image: url("./assets/video-fallback-background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.p-card {
+    background: linear-gradient(90deg, rgba(37,37,37,0.7567401960784313) 100%, rgba(2,0,36,1) 100%, rgba(0,212,255,1) 100%);
+    color: $font-color;
+}
+.text-center {
+    text-align: center;
+}
