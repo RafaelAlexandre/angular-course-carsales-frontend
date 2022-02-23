@@ -3,18 +3,17 @@
     <p-card>
       <div class="grid">
         <div class="col-12 text-center">
-            <i class="fa-solid fa-car-side fa-3x" style="color: #007ad9"></i>
-            <h2 class="text-center">Car Sales</h2></div>
+            <h2 class="text-center">Car Sales Login</h2></div>
         <div class="col-12">
           <label for="">Usuário:</label>
-          <input type="text" class="col-12" pInputText />
+          <input [(ngModel)]="requestLogin!.login" type="text" class="col-12" pInputText />
         </div>
         <div class="col-12">
           <label for="">Senha:</label>
-          <input type="text" class="col-12" pInputText />
+          <input [(ngModel)]="requestLogin!.password" type="password" class="col-12" pInputText />
         </div>
         <div class="col-12">
-          <button pButton type="button" label="Entrar" class="col-12"></button>
+          <button (click)="doLogin()" pButton type="button" label="Entrar" class="col-12"></button>
         </div>
       </div>
     </p-card>
